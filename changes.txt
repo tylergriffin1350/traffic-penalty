@@ -1,0 +1,10 @@
+changes made
+
+-changed the database (make sure to change it back)
+-created a seed.ts file in ./prisma/
+-added a script in package.json(traffic-api): "seed": "ts-node prisma/seed.ts"
+Note - the database needs to be populated for the sign up to work
+so be sure to run "npm run seed" (in the traffic-api directory)
+
+-
+
