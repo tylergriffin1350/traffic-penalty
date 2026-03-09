@@ -1,0 +1,28 @@
+name: Build and Deploy
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      - name: Login to Registry
+        uses: docker/login-action@v3
+        with:
+          registry: anansi.azurecr.io
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+          build-args: |
+            NEXT_PUBLIC_API_URL=https://traffic.cheche.et/api
+        env:
+          DOCKER_BUILD_RECORD_UPLOAD: false
+          DOCKER_BUILD_SUMMARY: false
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: anansi.azurecr.io/cheche/traffic/prod/web:${{ github.run_number }}

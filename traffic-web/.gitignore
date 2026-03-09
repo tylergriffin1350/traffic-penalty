@@ -1,0 +1,9 @@
+# files
+secrets.txt
+.DS_Store
+.env
+
+# folders
+/app/build
+/app/node_modules
+/kubernetes

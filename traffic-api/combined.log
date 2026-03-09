@@ -1,0 +1,891 @@
+2025-04-07T12:37:30.952Z [31merror[39m: Error: Expected double-quoted property name in JSON at position 184 (line 8 column 5), Status Code: 400
+2025-04-09T08:03:31.017Z [31merror[39m: Error: 
+Invalid `prismaClient.user.deleteMany()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic_api\src\controller\authController.ts:11:29
+
+   8 export const register = async (req: express.Request, res: express.Response) => {
+   9     const {phoneNumber, password, roleId} = req.body;
+  10 
+→ 11     await prismaClient.user.deleteMany(
+Foreign key constraint violated: `Penality_operatorId_fkey (index)`, Status Code: 500
+2025-04-09T08:04:12.108Z [31merror[39m: Error: 
+Invalid `prismaClient.user.deleteMany()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic_api\src\controller\authController.ts:11:29
+
+   8 export const register = async (req: express.Request, res: express.Response) => {
+   9     const {phoneNumber, password, roleId} = req.body;
+  10 
+→ 11     await prismaClient.user.deleteMany(
+Foreign key constraint violated: `Penality_operatorId_fkey (index)`, Status Code: 500
+2025-04-09T08:10:35.192Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-04-09T08:12:46.075Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-04-09T08:13:02.818Z [31merror[39m: Error: 
+Invalid `prismaClient.role.create()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic_api\src\controller\roleController.ts:13:42
+
+  10 }
+  11 
+  12 // Create a new role in the database
+→ 13 const role = await prismaClient.role.create(
+Unique constraint failed on the fields: (`name`), Status Code: 500
+2025-04-09T08:14:03.756Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-04-09T08:17:00.029Z [31merror[39m: Error: 
+Invalid `prismaClient.role.create()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic_api\src\controller\roleController.ts:8:42
+
+  5 const {name, description} = req.body;
+  6 
+  7 // Create a new role in the database
+→ 8 const role = await prismaClient.role.create(
+Unique constraint failed on the fields: (`name`), Status Code: 500
+2025-04-23T21:30:59.330Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-04-24T07:32:00.958Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-04-24T07:47:34.322Z [31merror[39m: Error: 
+Invalid `prismaClient.role.findMany()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\roleController.ts:21:43
+
+  18 
+  19 export const getRoles = async (req: express.Request, res: express.Response) => {
+  20     // Get all roles from the database
+→ 21     const roles = await prismaClient.role.findMany(
+error: Environment variable not found: DATABASE_URL.
+  -->  schema.prisma:13
+   | 
+12 |   provider = "postgresql"
+13 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1, Status Code: 500
+2025-04-24T07:47:58.741Z [31merror[39m: Error: 
+Invalid `prismaClient.penaltyType.findMany()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\penaltyTypeController.ts:22:57
+
+  19 
+  20 export const getPenaltyTypes = async (req: any, res: any) => {
+  21     // Get all penalty types from the database
+→ 22     const penaltyTypes = await prismaClient.penaltyType.findMany(
+error: Environment variable not found: DATABASE_URL.
+  -->  schema.prisma:13
+   | 
+12 |   provider = "postgresql"
+13 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1, Status Code: 500
+2025-04-24T07:48:08.854Z [31merror[39m: Error: 
+Invalid `prismaClient.role.create()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\roleController.ts:8:42
+
+  5 const {name, description} = req.body;
+  6 
+  7 // Create a new role in the database
+→ 8 const role = await prismaClient.role.create(
+error: Environment variable not found: DATABASE_URL.
+  -->  schema.prisma:13
+   | 
+12 |   provider = "postgresql"
+13 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1, Status Code: 500
+2025-04-24T07:54:09.778Z [31merror[39m: Error: 
+Invalid `prismaClient.role.create()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\roleController.ts:8:42
+
+  5 const {name, description} = req.body;
+  6 
+  7 // Create a new role in the database
+→ 8 const role = await prismaClient.role.create(
+error: Environment variable not found: DATABASE_URL.
+  -->  schema.prisma:13
+   | 
+12 |   provider = "postgresql"
+13 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1, Status Code: 500
+2025-04-24T07:57:47.042Z [31merror[39m: Error: 
+Invalid `prismaClient.role.create()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\roleController.ts:8:42
+
+  5 const {name, description} = req.body;
+  6 
+  7 // Create a new role in the database
+→ 8 const role = await prismaClient.role.create(
+error: Environment variable not found: DATABASE_URL.
+  -->  schema.prisma:13
+   | 
+12 |   provider = "postgresql"
+13 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1, Status Code: 500
+2025-04-29T12:26:51.103Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic-api\src\controller\authController.ts:84:40
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82   const { phoneNumber, password } = req.body;
+  83 
+→ 84   const user = await prismaClient.user.findUnique(
+error: Environment variable not found: DATABASE_URL.
+  -->  schema.prisma:13
+   | 
+12 |   provider = "postgresql"
+13 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1, Status Code: 500
+2025-04-29T12:27:15.453Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic-api\src\controller\authController.ts:11:48
+
+   8 export const register = async (req: express.Request, res: express.Response) => {
+   9   const { phoneNumber, password, roleId } = req.body;
+  10 
+→ 11   const existingUser = await prismaClient.user.findUnique(
+error: Environment variable not found: DATABASE_URL.
+  -->  schema.prisma:13
+   | 
+12 |   provider = "postgresql"
+13 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1, Status Code: 500
+2025-04-30T06:08:48.010Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic-api\src\controller\authController.ts:84:40
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82   const { phoneNumber, password } = req.body;
+  83 
+→ 84   const user = await prismaClient.user.findUnique(
+error: Environment variable not found: DATABASE_URL.
+  -->  schema.prisma:13
+   | 
+12 |   provider = "postgresql"
+13 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1, Status Code: 500
+2025-04-30T06:23:34.235Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T06:26:16.261Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T06:28:04.193Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T06:30:36.751Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T06:32:23.674Z [31merror[39m: Error: secretOrPrivateKey must have a value, Status Code: 500
+2025-04-30T06:33:58.298Z [31merror[39m: Error: secretOrPrivateKey must have a value, Status Code: 500
+2025-04-30T06:34:00.727Z [31merror[39m: Error: secretOrPrivateKey must have a value, Status Code: 500
+2025-04-30T06:34:12.308Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T06:40:41.665Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T06:45:05.557Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T06:45:50.658Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T06:45:56.892Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T06:48:16.834Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T06:48:23.560Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:21:25.448Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:22:14.655Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:22:45.318Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:23:44.305Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:23:51.829Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:23:56.567Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:30:04.354Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:31:16.708Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic-api\src\controller\authController.ts:297:50
+
+  294 const {phoneNumber, password, roleId} = req.body;
+  295 
+  296 // Check if user exists
+→ 297 const existingUser = await prismaClient.user.findUnique({
+        where: {
+          id: undefined,
+      ?   phoneNumber?: String,
+      ?   refreshToken?: String,
+      ?   AND?: UserWhereInput | UserWhereInput[],
+      ?   OR?: UserWhereInput[],
+      ?   NOT?: UserWhereInput | UserWhereInput[],
+      ?   password?: StringFilter | String,
+      ?   createdAt?: DateTimeFilter | DateTime,
+      ?   updatedAt?: DateTimeFilter | DateTime,
+      ?   roles?: RoleListRelationFilter,
+      ?   Penality?: PenalityListRelationFilter
+        }
+      })
+
+Argument `where` of type UserWhereUniqueInput needs at least one of `id`, `phoneNumber` or `refreshToken` arguments. Available options are marked with ?., Status Code: 500
+2025-04-30T07:31:34.265Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic-api\src\controller\authController.ts:297:50
+
+  294 const {phoneNumber, password, roleId} = req.body;
+  295 
+  296 // Check if user exists
+→ 297 const existingUser = await prismaClient.user.findUnique({
+        where: {
+          id: undefined,
+      ?   phoneNumber?: String,
+      ?   refreshToken?: String,
+      ?   AND?: UserWhereInput | UserWhereInput[],
+      ?   OR?: UserWhereInput[],
+      ?   NOT?: UserWhereInput | UserWhereInput[],
+      ?   password?: StringFilter | String,
+      ?   createdAt?: DateTimeFilter | DateTime,
+      ?   updatedAt?: DateTimeFilter | DateTime,
+      ?   roles?: RoleListRelationFilter,
+      ?   Penality?: PenalityListRelationFilter
+        }
+      })
+
+Argument `where` of type UserWhereUniqueInput needs at least one of `id`, `phoneNumber` or `refreshToken` arguments. Available options are marked with ?., Status Code: 500
+2025-04-30T07:31:35.647Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic-api\src\controller\authController.ts:297:50
+
+  294 const {phoneNumber, password, roleId} = req.body;
+  295 
+  296 // Check if user exists
+→ 297 const existingUser = await prismaClient.user.findUnique({
+        where: {
+          id: undefined,
+      ?   phoneNumber?: String,
+      ?   refreshToken?: String,
+      ?   AND?: UserWhereInput | UserWhereInput[],
+      ?   OR?: UserWhereInput[],
+      ?   NOT?: UserWhereInput | UserWhereInput[],
+      ?   password?: StringFilter | String,
+      ?   createdAt?: DateTimeFilter | DateTime,
+      ?   updatedAt?: DateTimeFilter | DateTime,
+      ?   roles?: RoleListRelationFilter,
+      ?   Penality?: PenalityListRelationFilter
+        }
+      })
+
+Argument `where` of type UserWhereUniqueInput needs at least one of `id`, `phoneNumber` or `refreshToken` arguments. Available options are marked with ?., Status Code: 500
+2025-04-30T07:32:00.420Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:32:13.959Z [31merror[39m: Error: 
+Invalid `prismaClient.user.update()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic-api\src\controller\authController.ts:307:42
+
+  304     return;
+  305 }
+  306 
+→ 307 const user = await prismaClient.user.update({
+        where: {
+          id: "dc56408b-f2aa-4288-be74-fc06bb219985"
+        },
+        data: {
+          phoneNumber: undefined,
+          roles: {
+            connect: {
+              id: undefined
+            }
+            ~~~~~~~~~~~~~~~
+          }
+        },
+        select: {
+          id: true,
+          phoneNumber: true,
+          roles: {
+            select: {
+              id: true,
+              name: true
+            }
+          }
+        }
+      })
+
+Argument `connect`: Invalid value provided. Expected RoleWhereUniqueInput[], provided Object., Status Code: 500
+2025-04-30T07:32:49.219Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:32:54.290Z [31merror[39m: Error: 
+Invalid `prismaClient.user.update()` invocation in
+C:\Users\EphremAbebeM\WebstormProjects\traffic-api\src\controller\authController.ts:307:42
+
+  304     return;
+  305 }
+  306 
+→ 307 const user = await prismaClient.user.update({
+        where: {
+          id: "dc56408b-f2aa-4288-be74-fc06bb219985"
+        },
+        data: {
+          phoneNumber: undefined,
+          roles: {
+            connect: {
+              id: undefined
+            }
+            ~~~~~~~~~~~~~~~
+          }
+        },
+        select: {
+          id: true,
+          phoneNumber: true,
+          roles: {
+            select: {
+              id: true,
+              name: true
+            }
+          }
+        }
+      })
+
+Argument `connect`: Invalid value provided. Expected RoleWhereUniqueInput[], provided Object., Status Code: 500
+2025-04-30T07:34:45.903Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:39:00.579Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:40:42.718Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T07:41:03.538Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T08:03:59.754Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T08:04:53.639Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T08:05:28.989Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T08:05:38.373Z [32minfo[39m: API running on port 5000 in development mode.
+2025-04-30T08:05:49.076Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-01T10:15:59.000Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-01T10:17:49.940Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-01T10:19:29.104Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-01T10:41:36.984Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:45:14.707Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:48:59.610Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:49:00.578Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:49:01.111Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:49:01.695Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:49:01.913Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:49:02.761Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:49:06.044Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:49:06.644Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:50:19.614Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T10:54:13.124Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-01T10:54:43.319Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:03:58.815Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:04:43.901Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:05:17.934Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:05:27.934Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:05:35.413Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:06:30.078Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:06:51.112Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:06:55.876Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:07:13.570Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:08:10.480Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-01T11:18:09.952Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-01T11:22:27.372Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-01T11:24:01.910Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-01T11:28:13.705Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-01T14:49:42.623Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findMany()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:263:43
+
+  260     ],
+  261 };
+  262 
+→ 263 const users = await prismaClient.user.findMany(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-07T16:39:21.910Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-08T11:24:22.122Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findMany()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:263:43
+
+  260     ],
+  261 };
+  262 
+→ 263 const users = await prismaClient.user.findMany(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-08T11:25:51.876Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findMany()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:263:43
+
+  260     ],
+  261 };
+  262 
+→ 263 const users = await prismaClient.user.findMany(
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 5), Status Code: 500
+2025-05-08T18:24:37.961Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-08T19:32:41.908Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-08T19:32:42.473Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-08T19:32:42.484Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-09T07:13:51.103Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-09T07:18:11.178Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-09T07:19:00.285Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-09T07:20:34.918Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-09T07:21:15.568Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-09T07:25:46.696Z [31merror[39m: Error: 
+Invalid `prismaClient.driver.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\driverController.ts:91:44
+
+  88 const { driverId } = req.params;
+  89 
+  90 // Get the driver by ID from the database
+→ 91 const driver = await prismaClient.driver.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-09T07:25:52.754Z [31merror[39m: Error: 
+Invalid `prismaClient.driver.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\driverController.ts:91:44
+
+  88 const { driverId } = req.params;
+  89 
+  90 // Get the driver by ID from the database
+→ 91 const driver = await prismaClient.driver.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-09T11:00:17.249Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-09T15:03:14.099Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-12T19:45:25.871Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-12T19:45:29.161Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-13T17:08:13.051Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-20T11:25:41.003Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-23T12:14:51.439Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-23T12:15:51.099Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-23T13:46:03.468Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-23T14:02:14.731Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-24T09:10:31.582Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-24T09:11:03.208Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-24T12:19:50.473Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-24T12:24:40.580Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-24T12:28:27.906Z [32minfo[39m: API running on port 5000 in development mode.
+2025-05-24T12:32:32.700Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-26T10:37:52.815Z [31merror[39m: Error: 
+Invalid `prismaClient.driver.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\driverController.ts:110:44
+
+  107 const { licenseNumber } = req.params;
+  108 
+  109 // Get the driver by ID from the database
+→ 110 const driver = await prismaClient.driver.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-05-26T13:50:18.154Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-05-30T14:30:49.507Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findMany()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:263:43
+
+  260     ],
+  261 };
+  262 
+→ 263 const users = await prismaClient.user.findMany(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-06-02T12:09:19.086Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-06-02T12:09:25.764Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-06-02T12:09:26.336Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-06-02T13:50:52.721Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-06-02T14:07:07.683Z [31merror[39m: Error: 
+Invalid `prismaClient.driver.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\driverController.ts:91:44
+
+  88 const { driverId } = req.params;
+  89 
+  90 // Get the driver by ID from the database
+→ 91 const driver = await prismaClient.driver.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-06-02T14:07:12.791Z [31merror[39m: Error: 
+Invalid `prismaClient.driver.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\driverController.ts:91:44
+
+  88 const { driverId } = req.params;
+  89 
+  90 // Get the driver by ID from the database
+→ 91 const driver = await prismaClient.driver.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-06-02T14:07:19.858Z [31merror[39m: Error: 
+Invalid `prismaClient.driver.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\driverController.ts:91:44
+
+  88 const { driverId } = req.params;
+  89 
+  90 // Get the driver by ID from the database
+→ 91 const driver = await prismaClient.driver.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-06-06T15:02:25.164Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AB3L\Desktop\traffic-api\traffic-api\src\controller\authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2025-06-06T15:11:22.775Z [32minfo[39m: API running on port 5000 in development mode.
+2025-06-13T11:32:05.141Z [32minfo[39m: API running on port 5000 in development mode.
+2025-06-13T11:36:58.588Z [32minfo[39m: API running on port 5000 in development mode.
+2025-06-13T11:37:07.969Z [32minfo[39m: API running on port 5000 in development mode.
+2025-06-13T11:38:50.769Z [32minfo[39m: API running on port 5000 in development mode.
+2025-06-13T11:39:21.992Z [32minfo[39m: API running on port 5000 in development mode.
+2025-06-13T11:40:05.952Z [32minfo[39m: API running on port 5000 in development mode.
+2025-06-13T12:07:50.422Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2025-06-13T12:07:50.956Z [31merror[39m: Error: Cannot set headers after they are sent to the client, Status Code: 500
+2026-02-02T12:25:24.224Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:28:16.368Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:28:23.497Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:29:22.487Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:29:25.504Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:30:29.883Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:31:54.397Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:33:42.943Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:35:35.401Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:39:30.858Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:39:39.443Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:41:33.490Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:41:34.420Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:41:48.104Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:43:56.618Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:44:26.545Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-02T12:44:50.707Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-04T06:40:23.980Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-04T06:46:23.051Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-04T06:46:31.818Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-04T06:47:11.570Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-04T06:47:53.100Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-04T07:04:47.724Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-04T07:06:12.354Z [32minfo[39m: API running on port 5000 in development mode.
+2026-02-04T07:48:50.246Z [32minfo[39m: API running on port 5001 in development mode.
+2026-02-04T07:49:16.685Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+/Users/abel/Desktop/cheche/traffic-penality/traffic-api/src/controller/authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2026-02-04T07:49:49.469Z [32minfo[39m: API running on port 5001 in development mode.
+2026-02-04T07:50:22.617Z [32minfo[39m: API running on port 5001 in development mode.
+2026-02-04T07:50:43.190Z [32minfo[39m: API running on port 5001 in development mode.
+2026-02-04T07:51:11.215Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+/Users/abel/Desktop/cheche/traffic-penality/traffic-api/src/controller/authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2026-02-04T07:51:27.060Z [32minfo[39m: API running on port 5001 in development mode.
+2026-02-04T07:52:15.529Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+/Users/abel/Desktop/cheche/traffic-penality/traffic-api/src/controller/authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2026-02-04T07:52:45.727Z [32minfo[39m: API running on port 5001 in development mode.
+2026-02-04T07:57:17.272Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+/Users/abel/Desktop/cheche/traffic-penality/traffic-api/src/controller/authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 21), Status Code: 500
+2026-02-04T08:28:51.011Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+/Users/abel/Desktop/cheche/traffic-penality/traffic-api/src/controller/authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2026-02-04T08:28:59.626Z [32minfo[39m: API running on port 5001 in development mode.
+2026-02-04T08:42:20.394Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+/Users/abel/Desktop/cheche/traffic-penality/traffic-api/src/controller/authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Timed out fetching a new connection from the connection pool. More info: http://pris.ly/d/connection-pool (Current connection pool timeout: 10, connection limit: 21), Status Code: 500
+2026-02-04T08:42:25.407Z [32minfo[39m: API running on port 5001 in development mode.
+2026-02-04T08:57:49.660Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findMany()` invocation in
+/Users/abel/Desktop/cheche/traffic-penality/traffic-api/src/controller/authController.ts:263:43
+
+  260     ],
+  261 };
+  262 
+→ 263 const users = await prismaClient.user.findMany(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2026-02-04T09:03:12.142Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+/Users/abel/Desktop/cheche/traffic-penality/traffic-api/src/controller/authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2026-02-04T09:03:17.113Z [32minfo[39m: API running on port 5001 in development mode.
+2026-02-04T09:03:25.175Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+/Users/abel/Desktop/cheche/traffic-penality/traffic-api/src/controller/authController.ts:84:42
+
+  81 export const login = async (req: express.Request, res: express.Response) => {
+  82     const {phoneNumber, password} = req.body;
+  83 
+→ 84     const user = await prismaClient.user.findUnique(
+Can't reach database server at `nana.postgres.database.azure.com:5432`
+
+Please make sure your database server is running at `nana.postgres.database.azure.com:5432`., Status Code: 500
+2026-02-04T09:03:30.170Z [32minfo[39m: API running on port 5001 in development mode.
+2026-03-04T10:14:15.263Z [32minfo[39m: API running on port 5001 in development mode.
+2026-03-07T17:32:41.275Z [32minfo[39m: API running on port 5001 in development mode.
+2026-03-07T17:38:35.760Z [32minfo[39m: API running on port 5001 in development mode.
+2026-03-07T17:38:56.479Z [32minfo[39m: API running on port 5001 in development mode.
+2026-03-07T17:55:37.097Z [31merror[39m: Error: 
+Invalid `prismaClient.user.create()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:27:42
+
+  24 const salt = await bcrypt.genSalt(saltRounds);
+  25 const hashedPassword = await bcrypt.hash(password, salt);
+  26 
+→ 27 const user = await prismaClient.user.create(
+An operation failed because it depends on one or more records that were required but not found. Expected 1 records to be connected, found only 0., Status Code: 500
+2026-03-07T18:11:44.083Z [31merror[39m: Error: 
+Invalid `prismaClient.user.create()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:27:42
+
+  24 const salt = await bcrypt.genSalt(saltRounds);
+  25 const hashedPassword = await bcrypt.hash(password, salt);
+  26 
+→ 27 const user = await prismaClient.user.create(
+An operation failed because it depends on one or more records that were required but not found. Expected 1 records to be connected, found only 0., Status Code: 500
+2026-03-07T18:23:29.845Z [32minfo[39m: API running on port 5001 in development mode.
+2026-03-07T18:29:10.544Z [31merror[39m: Error: 
+Invalid `prismaClient.user.create()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:27:42
+
+  24 const salt = await bcrypt.genSalt(saltRounds);
+  25 const hashedPassword = await bcrypt.hash(password, salt);
+  26 
+→ 27 const user = await prismaClient.user.create(
+An operation failed because it depends on one or more records that were required but not found. Expected 1 records to be connected, found only 0., Status Code: 500
+2026-03-07T18:41:59.142Z [32minfo[39m: API running on port 5001 in development mode.
+2026-03-07T18:43:30.282Z [31merror[39m: Error: 
+Invalid `prismaClient.user.create()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:27:42
+
+  24 const salt = await bcrypt.genSalt(saltRounds);
+  25 const hashedPassword = await bcrypt.hash(password, salt);
+  26 
+→ 27 const user = await prismaClient.user.create(
+An operation failed because it depends on one or more records that were required but not found. Expected 1 records to be connected, found only 0., Status Code: 500
+2026-03-07T18:58:11.591Z [32minfo[39m: API running on port 5001 in development mode.
+2026-03-07T18:58:19.719Z [31merror[39m: Error: 
+Invalid `prismaClient.user.create()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:27:42
+
+  24 const salt = await bcrypt.genSalt(saltRounds);
+  25 const hashedPassword = await bcrypt.hash(password, salt);
+  26 
+→ 27 const user = await prismaClient.user.create(
+An operation failed because it depends on one or more records that were required but not found. Expected 1 records to be connected, found only 0., Status Code: 500
+2026-03-07T18:58:51.629Z [31merror[39m: Error: 
+Invalid `prismaClient.user.create()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:27:42
+
+  24 const salt = await bcrypt.genSalt(saltRounds);
+  25 const hashedPassword = await bcrypt.hash(password, salt);
+  26 
+→ 27 const user = await prismaClient.user.create(
+An operation failed because it depends on one or more records that were required but not found. Expected 1 records to be connected, found only 0., Status Code: 500
+2026-03-07T19:03:21.754Z [32minfo[39m: API running on port 5001 in development mode.
+2026-03-09T08:15:19.460Z [32minfo[39m: API running on port 5001 in development mode.
+2026-03-09T08:24:09.861Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:93:42
+
+  90 export const login = async (req: express.Request, res: express.Response) => {
+  91     const {phoneNumber, password} = req.body;
+  92 
+→ 93     const user = await prismaClient.user.findUnique(
+Can't reach database server at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`., Status Code: 500
+2026-03-09T08:24:22.428Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:93:42
+
+  90 export const login = async (req: express.Request, res: express.Response) => {
+  91     const {phoneNumber, password} = req.body;
+  92 
+→ 93     const user = await prismaClient.user.findUnique(
+Can't reach database server at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`., Status Code: 500
+2026-03-09T08:24:46.828Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:93:42
+
+  90 export const login = async (req: express.Request, res: express.Response) => {
+  91     const {phoneNumber, password} = req.body;
+  92 
+→ 93     const user = await prismaClient.user.findUnique(
+Can't reach database server at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`., Status Code: 500
+2026-03-09T08:24:56.314Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:93:42
+
+  90 export const login = async (req: express.Request, res: express.Response) => {
+  91     const {phoneNumber, password} = req.body;
+  92 
+→ 93     const user = await prismaClient.user.findUnique(
+Can't reach database server at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`., Status Code: 500
+2026-03-09T08:25:20.140Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:11:50
+
+   8 export const register = async (req: express.Request, res: express.Response) => {
+   9     const {phoneNumber, password, roleId} = req.body;
+  10 
+→ 11     const existingUser = await prismaClient.user.findUnique(
+Can't reach database server at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`., Status Code: 500
+2026-03-09T08:25:43.461Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:11:50
+
+   8 export const register = async (req: express.Request, res: express.Response) => {
+   9     const {phoneNumber, password, roleId} = req.body;
+  10 
+→ 11     const existingUser = await prismaClient.user.findUnique(
+Can't reach database server at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`., Status Code: 500
+2026-03-09T08:26:22.381Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:11:50
+
+   8 export const register = async (req: express.Request, res: express.Response) => {
+   9     const {phoneNumber, password, roleId} = req.body;
+  10 
+→ 11     const existingUser = await prismaClient.user.findUnique(
+Can't reach database server at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`., Status Code: 500
+2026-03-09T08:28:56.203Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:11:50
+
+   8 export const register = async (req: express.Request, res: express.Response) => {
+   9     const {phoneNumber, password, roleId} = req.body;
+  10 
+→ 11     const existingUser = await prismaClient.user.findUnique(
+Can't reach database server at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`., Status Code: 500
+2026-03-09T08:30:11.761Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:11:50
+
+   8 export const register = async (req: express.Request, res: express.Response) => {
+   9     const {phoneNumber, password, roleId} = req.body;
+  10 
+→ 11     const existingUser = await prismaClient.user.findUnique(
+Can't reach database server at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`., Status Code: 500
+2026-03-09T08:31:37.439Z [31merror[39m: Error: 
+Invalid `prismaClient.user.findUnique()` invocation in
+C:\Users\AKAM\Desktop\traffic-penalty\new-pen\traffic-penality\traffic-api\src\controller\authController.ts:11:50
+
+   8 export const register = async (req: express.Request, res: express.Response) => {
+   9     const {phoneNumber, password, roleId} = req.body;
+  10 
+→ 11     const existingUser = await prismaClient.user.findUnique(
+Can't reach database server at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-weathered-river-abib7eub-pooler.eu-west-2.aws.neon.tech:5432`., Status Code: 500

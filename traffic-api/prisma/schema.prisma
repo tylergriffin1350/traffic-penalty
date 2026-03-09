@@ -1,0 +1,87 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String     @id @default(uuid())
+  phoneNumber  String?    @unique
+  password     String
+  refreshToken String?    @unique
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  roles        Role[]
+  Penality     Penality[]
+}
+
+model Role {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  description String?
+  users       User[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model PenaltyType {
+  id        String     @id @default(uuid())
+  name      String?
+  code      String?
+  point     Int?
+  fee       Float?
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  Penality  Penality[]
+}
+
+model Vehicle {
+  id           String   @id @default(uuid())
+  plate        String?
+  type         String?
+  loadCapacity Int
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  Penality Penality?
+}
+
+model Driver {
+  id            String     @id @default(uuid())
+  name          String
+  sex           String?
+  age           Int?
+  licenseNumber String    @unique
+  phoneNumber   String?    @unique
+  region        String?
+  city          String?
+  kebele        String?
+  Penality      Penality[]
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+}
+
+model Penality {
+  id            String      @id @default(uuid())
+  penaltyType   PenaltyType @relation(fields: [penaltyTypeId], references: [id])
+  penaltyTypeId String
+  address       String?
+  committedAt   DateTime
+  vehicle       Vehicle     @relation(fields: [vehicleId], references: [id])
+  vehicleId     String      @unique
+  operator      User?        @relation(fields: [operatorId], references: [id],onDelete: SetNull)
+  operatorId    String?
+  driver        Driver      @relation(fields: [driverId], references: [id])
+  driverId      String
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
